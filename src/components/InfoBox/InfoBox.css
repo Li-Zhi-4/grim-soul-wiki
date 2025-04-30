@@ -1,0 +1,140 @@
+
+div.infobox {
+    display: flex;
+    flex-direction: column;
+
+    width: 300px;
+
+    border: 1px solid #C5AF8D
+}
+
+
+
+/* Image Section */
+
+div.image-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+
+    width: 300px;
+    height: 300px;
+    padding: 12px;
+}
+
+img.item-icon {
+    width: 250px;
+    height: auto;
+}
+
+
+
+/* Info Section */
+
+div.info-section {      /* Outer box that contains info */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+
+    width: 300px;
+    height: fit-content;
+    padding: 12px;
+}
+
+dl.data-info {          /* Inner box that contains the specific row */
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    width: 250px;
+    height: fit-content;
+}
+
+div.data.short-text,    /* DELETE THIS ONCE YOU SET UP TAGS SO, MAKE SURE HEIGHT IS UNIFORM */
+div.data.tag {
+    height: 29px;
+}
+
+div.short-text,         /* For data on one row */
+div.tag {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+
+    padding: 2px 8px;
+}
+
+div.long-text {         /* For data on 2+ rows */
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    box-sizing: border-box;
+
+    padding: 4px 8px;
+}
+
+dt.key {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+dt.key.short-text,      /* Data key on one row has a width of 120px */
+dt.key.tag {
+    width: 120px;
+}
+
+dd.value.short-text,
+dd.value.tag {
+    display: flex;
+    justify-content: center;
+
+    width: 106px;
+
+    font-size: 16px;
+}
+
+
+
+
+
+/* Dividers */
+
+div.divider-down {
+    align-self: stretch;
+
+    height: 15px;
+
+    background-image:
+        linear-gradient(to right, #C5AF8D 0%, #C5AF8D 100%),
+        linear-gradient(to top,   rgba(197, 175, 141, 0) 0%, rgba(197, 175, 141, 1) 100%),
+        linear-gradient(to top,   rgba(197, 175, 141, 0) 0%, rgba(197, 175, 141, 1) 100%);
+  
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: top left, bottom left, bottom right;
+    background-size: 100% 1px, 1px 100%, 1px 100%;     
+}
+
+div.divider-up {
+    align-self: stretch;
+
+    height: 15px;
+
+    background-image:
+        linear-gradient(to right, #C5AF8D 0%, #C5AF8D 100%),
+        linear-gradient(to top,   rgba(197, 175, 141, 1) 0%, rgba(197, 175, 141, 0) 100%),
+        linear-gradient(to top,   rgba(197, 175, 141, 1) 0%, rgba(197, 175, 141, 0) 100%);
+  
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: bottom left, bottom left, bottom right;
+    background-size: 100% 1px, 1px 100%, 1px 100%;
+}
+
+hr.divider {
+    height: 1px;
+    background-color: rgba(197, 175, 141, 0.5);
+    border: none;
+}
