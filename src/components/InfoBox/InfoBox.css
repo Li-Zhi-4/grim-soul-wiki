@@ -24,8 +24,10 @@ div.image-section {
 }
 
 img.item-icon {
-    width: 250px;
-    height: auto;
+    width: auto;
+    max-width: 250px;
+    height: 300px;
+    max-height: 300px;
 }
 
 

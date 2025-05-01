@@ -5,16 +5,17 @@ import './App.css'
 
 
 import { HomePage } from './components/HomePage/HomePage'
-import { ShieldInfoBox } from './components/InfoBox/ShieldInfoBox'
+
+import { InfoBox } from './components/InfoBox/InfoBox'
 
 function App() {
-const [count, setCount] = useState(0)
+    const [count, setCount] = useState(0)
 
-return (
-    <>
-        <ShieldInfoBox item='fiery-retribution-shield' />
-    </>
-)
+    return (
+        <>
+            <InfoBox item='fiery-retribution-shield' />
+        </>
+    )
 }
 
 export default App
