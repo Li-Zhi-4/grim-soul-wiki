@@ -180,7 +180,7 @@ function InfoBox({ item }) {
             </div>
 
             {/* Will probably have to connect weaponData etc. with useState to actually dynamically switch the InfoBox types */}
-            {weaponData.map( (section, idx) => (<DataSections sectionData={section} key={idx} />) )}    
+            {shieldData.map( (section, idx) => (<DataSections sectionData={section} key={idx} />) )}    
         </div>
     );
 }

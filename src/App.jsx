@@ -6,14 +6,14 @@ import './App.css'
 
 import { HomePage } from './components/HomePage/HomePage'
 
-import { InfoBox } from './components/InfoBox/InfoBox'
+import { ContentLayout } from './components/ContentLayout/ContentLayout'
 
 function App() {
     const [count, setCount] = useState(0)
 
     return (
         <>
-            <InfoBox item='fiery-retribution-shield' />
+            <ContentLayout item='fiery-retribution-shield' />
         </>
     )
 }
