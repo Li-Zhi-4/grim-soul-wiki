@@ -6,16 +6,14 @@ import './App.css'
 
 import { HomePage } from './components/HomePage/HomePage'
 import { ItemPage } from './components/ItemPage/ItemPage'
+import { items } from './data/items'
 
 function App() {
     const [count, setCount] = useState(0)
 
     return (
         <>
-            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap" rel="stylesheet"></link>
-            
-            
-            <ItemPage item='fiery-retribution-shield' />
+            <ItemPage i={items['fiery-retribution-shield']} />
         </>
     )
 }
