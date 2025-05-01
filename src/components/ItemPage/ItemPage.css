@@ -1,0 +1,25 @@
+
+div.item-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+
+    padding-top: 100px;
+
+    background-image:
+        url('src/assets/textures/grey-70.svg'),
+        linear-gradient(
+            to right,
+            rgba(0,0,0,0) 0%,    
+            rgba(0,0,0,1.0) 40%,   
+            rgba(0,0,0,1.0) 60%,   
+            rgba(0,0,0,0) 100%   
+        ),
+        url('src/assets/cabin-in-woods.png');
+
+    background-repeat: no-repeat, repeat, no-repeat;
+    background-position: center center, center center, center center;
+    background-size: cover, cover, cover;
+}
+

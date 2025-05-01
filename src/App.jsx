@@ -5,15 +5,17 @@ import './App.css'
 
 
 import { HomePage } from './components/HomePage/HomePage'
-
-import { ContentLayout } from './components/ContentLayout/ContentLayout'
+import { ItemPage } from './components/ItemPage/ItemPage'
 
 function App() {
     const [count, setCount] = useState(0)
 
     return (
         <>
-            <ContentLayout item='fiery-retribution-shield' />
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&display=swap" rel="stylesheet"></link>
+            
+            
+            <ItemPage item='fiery-retribution-shield' />
         </>
     )
 }
