@@ -24,12 +24,16 @@ function ContentLayout({ i }) {
 
                     <div className="information-section">
                         <h2 className="subtitle">Crafting</h2>
-                        <p className="item">{i.crafting}</p>
+                        <ul className="item">
+                            {Object.entries(i.crafting).map( ([key, value]) => (<li key={key}>{value} {key}</li>))}
+                        </ul>
                     </div>
 
                     <div className="information-section">
                         <h2 className="subtitle">Obtained</h2>
-                        <p className="item">{i.obtained}</p>
+                        <ul className="item">
+                            {i.obtained.map( (p,idx) => (<li key={idx}>{p}</li>) )}
+                        </ul>
                     </div>
                 </div>
 

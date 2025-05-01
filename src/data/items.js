@@ -26,7 +26,9 @@ export const items = {
         elemental: "N/A",
         durability: "-",
         itemEffect: "Scares the Night Guest away.",
-        crafting: "Not craftable.",
+        crafting: {
+            ['']: 'Not craftable'
+        },
         obtained: ['Scarlet Hunt rewards', 'Ancient Sepulchre chest']
     },
     ["ice-sword"]: {
