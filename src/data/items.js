@@ -18,7 +18,7 @@ export const items = {
         name: "Fiery Retribution Shield",
         iconURL: 'src/assets/icons/Fiery_Retribution_Shield_Icon.webp',
         description: 'According to legend, the flames will not touch those who are pure of heart.',
-        use: ["Activating this reduces the physical damage of your enemy's next strike by 50.", "When blocking, deals 100 fire damage to all nearby enemies."],
+        use: "Activating this reduces the physical damage of your enemy’s next strike by 50. When blocking, deals 100 fire damage to all nearby enemies.",
         type: 'shield',
         rarity: 'legendary',
         combatMastery: 'Shields',
@@ -73,6 +73,7 @@ export const items = {
         crafting: {
             ['flax-fiber']: 2,
             ['cloth']: 1
-        }
+        },
+        obtained: ['Scarlet Hunt rewards', 'Ancient Sepulchre chest']
     }
 };

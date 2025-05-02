@@ -109,6 +109,15 @@ a.back-link:hover {
         padding-top: 24px;
     }
 
+    /* Child-child container that holds general information */
+    div.information {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        
+        width: 100%;
+    }
+
 }
 
 
