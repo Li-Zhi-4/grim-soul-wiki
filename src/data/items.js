@@ -1,22 +1,22 @@
 export const items = {
     ["cart-thill"]: {
         name: 'Cart Thill',
-        iconURL: 'src/assets/icons/Cart_Thill_Icon.webp',
+        iconURL: '/src/assets/icons/Cart_Thill_Icon.webp',
         description: 'A heavy argument in any dispute.',
     },
     spade: {
         name: 'Spade',
-        iconURL: 'src/assets/icons/Shovel_Icon.webp',
+        iconURL: '/src/assets/icons/Shovel_Icon.webp',
         description: 'If you sharpen the edges, you can quickly fill a freshly dug grave.',
     },
     dagger: {
         name: 'Dagger',
-        iconURL: 'src/assets/icons/Dagger_Icon.webp',
+        iconURL: '/src/assets/icons/Dagger_Icon.webp',
         description: 'A small but reliable elper for any swordsman.',
     },
     ["fiery-retribution-shield"]: {
         name: "Fiery Retribution Shield",
-        iconURL: 'src/assets/icons/Fiery_Retribution_Shield_Icon.webp',
+        iconURL: '/src/assets/icons/Fiery_Retribution_Shield_Icon.webp',
         description: 'According to legend, the flames will not touch those who are pure of heart.',
         use: "Activating this reduces the physical damage of your enemy’s next strike by 50. When blocking, deals 100 fire damage to all nearby enemies.",
         type: 'shield',
@@ -33,7 +33,7 @@ export const items = {
     },
     ["ice-sword"]: {
         name: 'Ice Sword',
-        iconURL: 'src/assets/icons/weapon/Frost_Sword_Icon.webp',
+        iconURL: '/src/assets/icons/weapon/Frost_Sword_Icon.webp',
         description: 'The cold of this weapon\'s blade will freeze the fire within your enemies.',
         use: ["Activating this reduces the physical damage of your enemy's next strike by 50.", "When blocking, deals 100 fire damage to all nearby enemies."],
         type: 'weapon',
@@ -54,7 +54,7 @@ export const items = {
     },
     ["bonnet-cap"]: {
         name: 'Bonnet Cap',
-        iconURL: 'src/assets/icons/armour/cloth-set/Simple_Hat_Icon.webp',
+        iconURL: '/src/assets/icons/armour/cloth-set/Simple_Hat_Icon.webp',
         description: 'Traditional headwear of the mobs.',
         type: 'armour',
         piece: 'helm',

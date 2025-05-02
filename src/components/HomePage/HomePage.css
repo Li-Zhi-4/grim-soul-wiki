@@ -8,10 +8,10 @@ div.home-page {
     height: 100vh;
     width: 100vw;
 
-    background-image: url("src/assets/night-guest-2.png");
-    background-size: cover; /* Covers entire area */
-    background-position: center center; /* Centers image so it crops nicely */
-    background-repeat: no-repeat; /* No tiling */
+    background-image: url("/src/assets/night-guest-2.png");
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
 }
 
 .position-welcome-card {
