@@ -6,7 +6,7 @@ function NavigationBar() {
     return (
         <nav className="menu">
             <ul>
-                <a href="" className="logo">
+                <a href="/" className="logo">
                     <img className="main-logo" src='/src/assets/main-logo.svg' alt="" />
                 </a>
                 <div className="links">

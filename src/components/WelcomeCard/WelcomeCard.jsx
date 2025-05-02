@@ -6,7 +6,7 @@ function WelcomeCard({ className='' }) {
             <div className="dividerDown"></div>
             <div className="welcomeMessage">
                 <h1 className="welcome">Online guides and resources for wanderers of the Plague Lands!</h1>
-                <a href="" className="itemsButton">See items</a>
+                <a href="/items" className="itemsButton">See items</a>
             </div>
             <div className="dividerUp"></div>
         </div>

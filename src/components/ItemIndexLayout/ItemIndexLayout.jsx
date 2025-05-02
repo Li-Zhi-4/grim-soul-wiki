@@ -2,33 +2,26 @@ import './ItemIndexLayout.css'
 
 import { Link } from 'react-router-dom';
 
+import { items } from '../../data/items';
+
 function ItemIndexLayout() {
 
-    /* Figure out how to display use. */
     return (
         <div className="content-parent">
-            <a href="" className="back-link">&lt; Back</a>
+            <a href="/" className="back-link">&lt; Back</a>
             <h1 className="item-title">Items</h1>
             
-            <div className='item-list'>
-                <Link to="/items/fiery-retribution-shield" className='test-link'>
-                    <img src="/src/assets/icons/Fiery_Retribution_Shield_Icon.webp" alt="shield" />
-                </Link>
-                <Link to="/items/bonnet-cap" className='test-link'>
-                    <img src="/src/assets/icons/armour/cloth-set/Simple_Hat_Icon.webp" alt="armour" />
-                </Link>
-                <Link to="/items/fiery-retribution-shield" className='test-link'>
-                    <img src="/src/assets/icons/Fiery_Retribution_Shield_Icon.webp" alt="shield" />
-                </Link>
-                <Link to="/items/fiery-retribution-shield" className='test-link'>
-                    <img src="/src/assets/icons/Fiery_Retribution_Shield_Icon.webp" alt="shield" />
-                </Link>
-                <Link to="/items/fiery-retribution-shield" className='test-link'>
-                    <img src="/src/assets/icons/Fiery_Retribution_Shield_Icon.webp" alt="shield" />
-                </Link>
-                <Link to="/items/fiery-retribution-shield" className='test-link'>
-                    <img src="/src/assets/icons/Fiery_Retribution_Shield_Icon.webp" alt="shield" />
-                </Link>
+            <div className='item-index'>
+                <div className="divider-down"></div>
+                <div className="item-list">
+                    {Object.entries(items).map( ([slug, item]) => (
+                        <Link to={`/items/${slug}`} className='item-link' key={slug}>
+                            <img className="link-image" src={item.iconURL} alt="shield" />
+                            <span className="link-label">{item.name}</span>
+                        </Link>
+                    ))}
+                </div>
+                <div className="divider-up"></div>
             </div>
         </div>
     );

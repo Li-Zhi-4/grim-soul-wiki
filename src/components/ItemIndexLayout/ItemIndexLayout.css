@@ -13,7 +13,23 @@ div.content-parent {
     color: white;
 }
 
+div.item-index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+div.item-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 24px;
+    box-sizing: border-box;
+    justify-content: center;
+
+    width: 100%;
+    height: fit-content;
+    padding: 18px 24px;
+}
 
 /* Text Styling */
 h1.item-title {
@@ -31,6 +47,44 @@ a.back-link:hover {
 }
 
 
+
+/* Links */
+
+a.item-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    box-sizing: border-box;
+
+    padding: clamp(4px, 5vw, 24px);
+    height: 250px;
+    width: 100%;
+
+    background-color: rgba(44, 44, 44, 0.5);
+    border-radius: 8px;
+
+    text-decoration: none;
+}
+
+a.item-link:hover {
+    background-color: rgba(87, 132, 131, 0.25);
+
+    span.link-label {
+        color: #E4EFEF;
+    }
+}
+
+img.link-image {
+    height: 150px;
+    width: fit-content;
+}
+
+span.link-label {
+    color: white;
+    text-align: center;
+}
 
 
 
@@ -69,4 +123,39 @@ a.back-link:hover {
         color: white;
     }
 
+}
+
+
+
+
+/* Dividers */
+
+div.divider-down {
+    align-self: stretch;
+
+    height: 15px;
+
+    background-image:
+        linear-gradient(to right, #C5AF8D 0%, #C5AF8D 100%),
+        linear-gradient(to top,   rgba(197, 175, 141, 0) 0%, rgba(197, 175, 141, 1) 100%),
+        linear-gradient(to top,   rgba(197, 175, 141, 0) 0%, rgba(197, 175, 141, 1) 100%);
+  
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: top left, bottom left, bottom right;
+    background-size: 100% 1px, 1px 100%, 1px 100%;     
+}
+
+div.divider-up {
+    align-self: stretch;
+
+    height: 15px;
+
+    background-image:
+        linear-gradient(to right, #C5AF8D 0%, #C5AF8D 100%),
+        linear-gradient(to top,   rgba(197, 175, 141, 1) 0%, rgba(197, 175, 141, 0) 100%),
+        linear-gradient(to top,   rgba(197, 175, 141, 1) 0%, rgba(197, 175, 141, 0) 100%);
+  
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: bottom left, bottom left, bottom right;
+    background-size: 100% 1px, 1px 100%, 1px 100%;
 }

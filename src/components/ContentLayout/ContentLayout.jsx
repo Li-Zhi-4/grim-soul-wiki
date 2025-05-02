@@ -14,7 +14,7 @@ function ContentLayout({ i }) {
     /* Figure out how to display use. */
     return (
         <div className="content-parent">
-            <a href="" className="back-link">&lt; Back</a>
+            <a href="/items" className="back-link">&lt; Back</a>
             <h1 className="item-title">{i.name}</h1>
             
             <div className="content-child">
