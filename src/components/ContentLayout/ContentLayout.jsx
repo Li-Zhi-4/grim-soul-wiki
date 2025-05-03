@@ -1,6 +1,7 @@
 import './ContentLayout.css'
-
 import { InfoBox } from '../InfoBox/InfoBox';
+
+import { Link } from 'react-router-dom';
 
 /**
  * COMPONENT: ContentLayout
@@ -14,7 +15,7 @@ function ContentLayout({ i }) {
     /* Figure out how to display use. */
     return (
         <div className="content-parent">
-            <a href="/items" className="back-link">&lt; Back</a>
+            <Link to="/items" className='back-link'>&lt; Back</Link>
             <h1 className="item-title">{i.name}</h1>
             
             <div className="content-child">

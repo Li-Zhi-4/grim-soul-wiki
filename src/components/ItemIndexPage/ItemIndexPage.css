@@ -5,6 +5,7 @@ div.item-page {
     align-items: center;
     box-sizing: border-box;
 
+    min-height: 100vh;
     padding-top: 100px;
 
     background-image:

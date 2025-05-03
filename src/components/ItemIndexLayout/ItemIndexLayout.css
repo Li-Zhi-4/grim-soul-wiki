@@ -28,6 +28,7 @@ div.item-list {
 
     width: 100%;
     height: fit-content;
+    min-height: 286px;
     padding: 18px 24px;
 }
 
@@ -85,6 +86,63 @@ span.link-label {
     color: white;
     text-align: center;
 }
+
+
+/* Filters: Tags and Search bar */
+div.filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-bottom: 8px;
+}
+
+div.filter-tags {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+button.tag {
+    background: none;
+    border: none;
+
+    padding: 4px 12px;
+
+    font-size: 16px;
+    border-radius: 8px;
+    color: white;
+}
+
+button.tag:hover {
+    background-color: rgba(44, 44, 44, 0.5);
+    color: #578483;
+}
+
+button.active-tag {
+    background: none;
+    border: none;
+
+    padding: 4px 12px;
+
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: rgba(44, 44, 44, 0.5);
+    color: #578483;
+}
+
+button.active-tag:hover {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+input.search-input {
+    padding: 12px 20px;
+
+    font-size: 16px;
+    border-radius: 500px;
+}
+
 
 
 /* Pagination Buttons */
