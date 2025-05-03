@@ -1,13 +1,15 @@
 import './NavigationBar.css'
 import { Link } from 'react-router-dom';
 
+import mainLogo from '/src/assets/main-logo.svg';
+
 function NavigationBar() {
 
     return (
         <nav className="menu">
             <ul>
                 <a href="/" className="logo">
-                    <img className="main-logo" src='/src/assets/main-logo.svg' alt="" />
+                    <img className="main-logo" src={mainLogo} alt="" />
                 </a>
                 <div className="links">
                     <Link to="/" className='navLink'>Guides</Link>
