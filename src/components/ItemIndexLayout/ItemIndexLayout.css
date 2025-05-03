@@ -87,6 +87,39 @@ span.link-label {
 }
 
 
+/* Pagination Buttons */
+div.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+
+    width: 100%;
+    height: fit-content;
+    padding-top: 24px;
+    padding-bottom: 12px;
+}
+
+button.paginationButton {
+    padding: 8px 24px;
+    border-radius: 500px;
+
+    background: none;
+    border: 1px solid rgba(197, 175, 141, 0.5);
+    color: rgba(197, 175, 141, 1);
+    font-size: 16px;
+}
+
+button.paginationButton:hover {
+    background-color: rgba(197, 175, 141, 0.2);
+}
+
+p.pagination {
+    width: 100%;
+    text-align: center;
+    color: rgba(197, 175, 141, 1);;
+}
+
 
 
 /* Tablet */
