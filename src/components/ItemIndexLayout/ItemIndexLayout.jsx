@@ -24,7 +24,7 @@ function filterData( type, filter, onChange ) {
         }
     }
 
-    // Filter AllData based off the current FILTER_LIST
+    // Filter AllData based off the current FILTER_LIST, add onto this if more tags are needed
     let filtered = Object.fromEntries(
         Object.entries(AllData).filter(
         ([, item]) =>
