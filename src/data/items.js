@@ -16,7 +16,7 @@ export const items = {
     },
     ["fiery-retribution-shield"]: {
         name: "Fiery Retribution Shield",
-        iconURL: '/src/assets/icons/Fiery_Retribution_Shield_Icon.webp',
+        iconURL: '/src/assets/icons/shields/Fiery_Retribution_Shield_Icon.webp',
         description: 'According to legend, the flames will not touch those who are pure of heart.',
         use: "Activating this reduces the physical damage of your enemy’s next strike by 50. When blocking, deals 100 fire damage to all nearby enemies.",
         type: 'shield',
@@ -27,7 +27,7 @@ export const items = {
         durability: "-",
         itemEffect: "Scares the Night Guest away.",
         crafting: {
-            ['']: 'Not craftable'
+            ['Not craftable']: null
         },
         obtained: ['Scarlet Hunt rewards', 'Ancient Sepulchre chest']
     },

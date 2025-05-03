@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 import { NavigationBar } from '../NavigationBar/NavigationBar';
 import { ContentLayout } from '../ContentLayout/ContentLayout';
 
-import { items } from '../../data/items';
+import { AllData } from '../../data/AllData';
 
 /**
  * COMPONENT: ItemPage
@@ -17,7 +17,7 @@ import { items } from '../../data/items';
  */
 function ItemPage() {
     const { itemID } = useParams();
-    const i = items[itemID];
+    const i = AllData[itemID];
 
     return (
         <div className='item-page'>

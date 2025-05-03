@@ -60,7 +60,6 @@ function InfoBox({ i }) {
         ],
         [
             {label: "Armour",           value: i.armour,            styleClass: "short-text",   last: false,    id: crypto.randomUUID() },
-            {label: "Elemental",        value: i.elemental,         styleClass: "tag",          last: false,    id: crypto.randomUUID() },
             {label: "Durability",       value: i.durability,        styleClass: "short-text",   last: false,    id: crypto.randomUUID() },
             {label: "Effect",           value: i.itemEffect,        styleClass: "long-text",    last: true,     id: crypto.randomUUID() }
         ]
@@ -76,7 +75,7 @@ function InfoBox({ i }) {
         ],
         [
             {label: "Damage",           value: i.damage,            styleClass: "short-text",   last: false,    id: crypto.randomUUID() },
-            {label: "Elemental",        value: i.elemental.element, styleClass: "tag",          last: false,    id: crypto.randomUUID() },
+            {label: "Elemental",        value: i.elementType,       styleClass: "tag",          last: false,    id: crypto.randomUUID() },
             {label: "Attack Speed",     value: i.attackSpeed,       styleClass: "short-text",   last: false,    id: crypto.randomUUID() },
             {label: "Range",            value: i.range,             styleClass: "short-text",   last: false,    id: crypto.randomUUID() },
             {label: "DPS",              value: i.dps,               styleClass: "short-text",   last: false,    id: crypto.randomUUID() },
@@ -95,7 +94,7 @@ function InfoBox({ i }) {
         ],
         [
             {label: "Armour",           value: i.armour,                    styleClass: "short-text",   last: false,    id: crypto.randomUUID() },
-            {label: "Elemental",        value: i.elemental.element,         styleClass: "tag",          last: false,    id: crypto.randomUUID() },
+            {label: "Elemental",        value: i.elementType,               styleClass: "tag",          last: false,    id: crypto.randomUUID() },
             {label: "Durability",       value: i.durability,                styleClass: "short-text",   last: false,    id: crypto.randomUUID() },
             {label: "Effect",           value: i.itemEffect,                styleClass: "long-text",    last: false,    id: crypto.randomUUID() },
             {label: "Full Set Effect",  value: i.fullSetEffect,             styleClass: "long-text",    last: true,     id: crypto.randomUUID() }
