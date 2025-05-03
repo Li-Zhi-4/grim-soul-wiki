@@ -21,5 +21,6 @@ div.item-page {
     background-repeat: no-repeat, repeat, no-repeat;
     background-position: center center, center center, center center;
     background-size: cover, cover, cover;
+    background-attachment: fixed;
 }
 
