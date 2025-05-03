@@ -55,36 +55,35 @@ function filterData( type, filter, onChange ) {
  * @returns Formats layout of js objects
  */
 function ItemIndexLayout() {
-    const [currentFilter, setCurrentFilter] = useState(AllData);
-    const [searchTerm, setSearchTerm] = useState('');
-    const [selectedTags, setSelectedTags] = useState(['All items']);
+    // Sets initial state of page
+    const [currentFilter, setCurrentFilter] = useState(AllData);        // AllData is displayed until filters are applied
+    const [searchTerm, setSearchTerm] = useState('');                   // Search bar is empty initially
+    const [selectedTags, setSelectedTags] = useState(['']);             // No tags are selected to start
+    const [currentPage, setCurrentPage] = useState(1);                  // User starts on page one of pagination
 
     const entries = useMemo(() => Object.entries(currentFilter), [currentFilter]);     // Creates an array consisting of [ {<name>, <value>}, ...]
-    const pageCount = Math.ceil(entries.length / ITEMS_PER_PAGE);   // Calculates total number of pages required
-
-    const [currentPage, setCurrentPage] = useState(1);
-
-    const start = (currentPage - 1) * ITEMS_PER_PAGE;
-    const currentEntries = useMemo(() => {                          // Creates a list of entries for the current page selected
+    const pageCount = Math.ceil(entries.length / ITEMS_PER_PAGE);       // Calculates total number of pages required
+    const start = (currentPage - 1) * ITEMS_PER_PAGE;                   // Calculates the starting page of pagination
+    const currentEntries = useMemo(() => {                              // Creates a list of entries for the current page selected
         return entries.slice(start, start + ITEMS_PER_PAGE);
     }, [entries, currentPage]);
 
+    // Handles filters for tags and search bar
     const handleFilter = (type, filter) => {
         setCurrentPage(1);
         filterData(type, filter, setCurrentFilter);
     };
 
+    // Toggles tag visuals
     function toggleTag(tag) {
-        if (tag === 'All items') {
+        if (tag === 'All items') {          // If All items tag is selected
             allTags.length = 0;
             setSelectedTags('All items');
         } else {
-            setSelectedTags(prev => 
-                prev.includes(tag)
-                    ? prev.filter(t => t !== tag) // remove it
-                    : [...prev, tag]              // add it
-            );
+            // Sets a tag or removes it, depending on if it existed previously
+            setSelectedTags(prev => prev.includes(tag) ? prev.filter(t => t !== tag) : [...prev, tag]);
         }
+        setSearchTerm('');      // Resets the Search bar if a tag is selected
     }
 
     const allTags = ['All items', 'Armour', 'Weapon', 'Shield'];
