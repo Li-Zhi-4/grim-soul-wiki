@@ -3,7 +3,7 @@ import path from 'path';
 import XLSX from 'xlsx';
 
 // 1. Read & parse your workbook
-const workbook  = XLSX.readFile('src/data/Shields.xlsx');
+const workbook  = XLSX.readFile('src/data/BronzeSet.xlsx');
 const sheetName = workbook.SheetNames[0];
 const worksheet = workbook.Sheets[sheetName];
 // IMPORTANT: defval:null so empty cells show up as null
@@ -58,7 +58,7 @@ const formatted = rows.map(item => {
 });
 
 // 3. Stringify & write to Shields.json
-const outPath    = path.resolve('src/data', 'Shields.json');
+const outPath    = path.resolve('src/data', 'BronzeSet.json');
 const jsonString = JSON.stringify(formatted, null, 2);
 fs.writeFileSync(outPath, jsonString, 'utf8');
 
